@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ADAD85"
+    tools:context="com.admit.btcam.MainActivity" >
+
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A30000"
+        android:textSize="18dp"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/GoDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/Stop"
+        android:layout_below="@+id/GoLeft"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="30dp"
+        android:background="#336600"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/exit_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/click"
+        android:layout_alignLeft="@+id/click"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:background="#003300"
+        android:text="@string/exit" />
+
+    <Button
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/Stop"
+        android:layout_marginTop="44dp"
+        android:layout_marginLeft="40dp"
+        android:background="#8F0000"
+        android:paddingBottom="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="8dp"
+        android:text="Click to Capture Photo!" />
+
+    <Button
+        android:id="@+id/GoUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/GoDown"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="43dp"
+        android:background="#336600"
+        android:text="Front" />
+
+    <Button
+        android:id="@+id/GoRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/GoLeft"
+        android:layout_alignBottom="@+id/GoLeft"
+        android:layout_toRightOf="@+id/exit_app"
+        android:layout_marginLeft="58dp"
+        android:background="#336600"
+        android:text="Right" />
+
+    <Button
+        android:id="@+id/Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/click"
+        android:layout_below="@+id/GoDown"
+        android:layout_marginTop="50dp"
+        android:background="#003300"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="@string/stop" />
+
+    <Button
+        android:id="@+id/GoLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/exit_app"
+        android:layout_below="@+id/GoUp"
+        android:layout_marginTop="31dp"
+        android:background="#336600"
+        android:text="Left" />
+
+</RelativeLayout>
